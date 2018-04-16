@@ -1,0 +1,16 @@
+PODS:
+  - BigNumberPrivate (2.0)
+  - ExpressionPrivate (0.12.9):
+    - BigNumberPrivate
+
+DEPENDENCIES:
+  - BigNumberPrivate
+  - ExpressionPrivate
+
+SPEC CHECKSUMS:
+  BigNumberPrivate: 3c5fc09e509949a91a81a895ceae3732396c878b
+  ExpressionPrivate: cf87b99578a7188dc257530f3c54a17c2f219982
+
+PODFILE CHECKSUM: e34a80552fe5d64144b2f934b5b8b34bc90f8a7d
+
+COCOAPODS: 1.4.0

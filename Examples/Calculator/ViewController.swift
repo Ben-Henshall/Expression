@@ -30,6 +30,7 @@
 //
 
 import Expression
+import BigNumberPrivate
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -56,8 +57,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let text = textField.text, text != "" {
             do {
-                let result = try Expression(text).evaluate()
-                addOutput(String(format: "= %g", result), color: .black)
+                let result = try BDouble(Expression(text).evaluate())
+              addOutput(" = \(result)", color: .black)
             } catch {
                 addOutput("\(error)", color: .red)
             }
