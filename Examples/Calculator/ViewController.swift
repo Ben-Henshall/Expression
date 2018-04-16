@@ -29,7 +29,7 @@
 //  SOFTWARE.
 //
 
-import Expression
+import ExpressionPrivate
 import BigNumberPrivate
 import UIKit
 

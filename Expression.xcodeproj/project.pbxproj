@@ -19,11 +19,9 @@
 		015E4955203310580015B0E8 /* Expression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; };
 		015E49562033105D0015B0E8 /* Expression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; };
 		015E4957203310620015B0E8 /* Expression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; };
-		015E4958203310660015B0E8 /* Expression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; };
 		015E495D203311A20015B0E8 /* Expression.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		015E495F203311D40015B0E8 /* Expression.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		015E4961203311FB0015B0E8 /* Expression.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		015E49632033120D0015B0E8 /* Expression.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		01A341FF2032E01200F769A6 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A341FD2032DEE100F769A6 /* Benchmarks.swift */; };
 		01A342002032E01B00F769A6 /* Benchmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A341FD2032DEE100F769A6 /* Benchmarks.swift */; };
 		01A342082033043600F769A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A342072033043600F769A6 /* AppDelegate.swift */; };
@@ -59,6 +57,9 @@
 		01DD38DB1ED63B1E00F17F46 /* Expression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011F79551D8D67BD00C5299A /* Expression.framework */; };
 		01FEBBDC2008C3C8009469E9 /* AnyExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FEBBDB2008C3C7009469E9 /* AnyExpression.swift */; };
 		01FEBBDD2008C3C8009469E9 /* AnyExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FEBBDB2008C3C7009469E9 /* AnyExpression.swift */; };
+		1305BEC02084FDA700E70E2A /* BigNumberPrivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1305BEBF2084FDA700E70E2A /* BigNumberPrivate.framework */; };
+		1305BEC22084FDAE00E70E2A /* BigNumberPrivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1305BEC12084FDAE00E70E2A /* BigNumberPrivate.framework */; };
+		1305BEC42085018B00E70E2A /* Pods_Calculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5C6E090ACD41A0E88BB3108 /* Pods_Calculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAEEAC39D1F0F65A61361FB2 /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C6E090ACD41A0E88BB3108 /* Pods_Calculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,13 +72,6 @@
 			remoteInfo = Expression;
 		};
 		01A3421820330E6600F769A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 015B35931D8AD15600ABBD4E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 011F794B1D8D67BD00C5299A;
-			remoteInfo = "Expression (iOS)";
-		};
-		01CC9F171EE2E063001941BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 015B35931D8AD15600ABBD4E /* Project object */;
 			proxyType = 1;
@@ -148,17 +142,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		015E4962203312010015B0E8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				015E49632033120D0015B0E8 /* Expression.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		01ABE8592040868B00798A05 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +150,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		1305BEC52085018B00E70E2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1305BEC42085018B00E70E2A /* Pods_Calculator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -220,6 +214,8 @@
 		01DD38E01ED63B1E00F17F46 /* ReleasePerformance.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReleasePerformance.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FEBBDB2008C3C7009469E9 /* AnyExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyExpression.swift; sourceTree = "<group>"; };
 		01FEBBDE2008C4F2009469E9 /* AnyExpressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyExpressionTests.swift; sourceTree = "<group>"; };
+		1305BEBF2084FDA700E70E2A /* BigNumberPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigNumberPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1305BEC12084FDAE00E70E2A /* BigNumberPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigNumberPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2925C5C6F453AC13FAC270C8 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		6E471FDA2E6A0E10FDA5B08C /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		B5C6E090ACD41A0E88BB3108 /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1305BEC02084FDA700E70E2A /* BigNumberPrivate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1305BEC22084FDAE00E70E2A /* BigNumberPrivate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +265,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015E4958203310660015B0E8 /* Expression.framework in Frameworks */,
 				BAEEAC39D1F0F65A61361FB2 /* Pods_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +440,8 @@
 		01CF6AF81E1C70B70017139E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1305BEC12084FDAE00E70E2A /* BigNumberPrivate.framework */,
+				1305BEBF2084FDA700E70E2A /* BigNumberPrivate.framework */,
 				01CF6AF91E1C70B70017139E /* XCTest.framework */,
 				B5C6E090ACD41A0E88BB3108 /* Pods_Calculator.framework */,
 			);
@@ -578,14 +577,13 @@
 				01CC9EF11EE2DC79001941BC /* Sources */,
 				01CC9EF21EE2DC79001941BC /* Frameworks */,
 				01CC9EF31EE2DC79001941BC /* Resources */,
-				015E4962203312010015B0E8 /* Embed Frameworks */,
 				DE9CBF8E684F25185C7D8151 /* [CP] Embed Pods Frameworks */,
 				8170B0F9C3687B0CF2A04132 /* [CP] Copy Pods Resources */,
+				1305BEC52085018B00E70E2A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				01CC9F181EE2E063001941BC /* PBXTargetDependency */,
 			);
 			name = Calculator;
 			productName = Calculator;
@@ -996,11 +994,6 @@
 			isa = PBXTargetDependency;
 			target = 011F794B1D8D67BD00C5299A /* Expression (iOS) */;
 			targetProxy = 01A3421820330E6600F769A6 /* PBXContainerItemProxy */;
-		};
-		01CC9F181EE2E063001941BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 011F794B1D8D67BD00C5299A /* Expression (iOS) */;
-			targetProxy = 01CC9F171EE2E063001941BC /* PBXContainerItemProxy */;
 		};
 		01CC9F481EE2E13A001941BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

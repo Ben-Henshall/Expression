@@ -33,6 +33,7 @@
 
 import Dispatch
 import Foundation
+import BigNumberPrivate
 
 /// Immutable wrapper for a parsed expression
 /// Reusing the same Expression instance for multiple evaluations is more efficient
@@ -511,7 +512,7 @@ public final class Expression: CustomStringConvertible {
     public var symbols: Set<Symbol> { return root.symbols }
 
     /// Evaluate the expression
-    public func evaluate() throws -> Double {
+    public func evaluate() throws -> BDouble {
         return try root.evaluate()
     }
 
