@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Ben-Henshall/Expression'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'Nick Lockwood'
-  s.source           = { :git => 'https://github.com/Ben-Henshall/Expression.git', :tag => 0.12.9 }
+  s.source           = { :git => 'https://github.com/Ben-Henshall/Expression.git', :tag => '0.12.9' }
 
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
