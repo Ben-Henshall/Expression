@@ -23,14 +23,14 @@
 # }
 
 Pod::Spec.new do |s|
-  s.name             = 'Expression'
+  s.name             = 'ExpressionPrivate'
   s.version          = '0.12.9'
   s.summary          = 'Mac and iOS library for evaluating numeric expressions at runtime. But with BigNumbers.'
 
   s.homepage         = 'https://github.com/Ben-Henshall/Expression'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'Nick Lockwood'
-  s.source           = { :git => 'https://github.com/Ben-Henshall/Expression.git', :tag => 0.12.9 }
+  s.source           = { :git => 'https://github.com/Ben-Henshall/Expression.git', :tag => '0.12.9' }
 
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources'
 
-  s.dependency 'BigNumber', :git => 'https://github.com/Ben-Henshall/Swift-Big-Integer.git', :branch => 'fix-scientific-notation'
+  s.dependency 'BigNumberPrivate'
 end
